@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Projets{% endblock %}
+
+{% block content %}
+<section>
+    <h1>Mes Projets</h1>
+    <div class="projects">
+        {% for project in projects %}
+            <div class="project-card">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.link }}" target="_blank">Voir le projet</a>
+            </div>
+        {% else %}
+            <p>Aucun projet pour le moment.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
