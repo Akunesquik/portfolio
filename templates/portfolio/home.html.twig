@@ -8,11 +8,46 @@
 {% block content %}
     <div class="wrapper-home-intro">
         <div>
-
+            <h1>
+                Alexis Fiolet
+            </h1>
+            <p>
+                Je suis Alexis, un développeur web passionné par la création de solutions modernes et efficaces. Mon objectif est de concevoir des applications web interactives et intuitives en utilisant les technologies les plus récentes. Explorez mes projets et découvrez mon parcours.
+            </p>
+            <a href="mailto:alexis.fiolet@gmail.com">
+                Me contacter
+            </a>
         </div>
         <div>
-
+            <img src="{{ asset('img/moi.png') }}" alt="Moi">
         </div>
+    </div>
+    <div class="wrapper-home-carousel">
+        <p>
+            J'ai travaillé pour
+        </p>
+        <div class="carousel">
+            <div class="item-carousel">
+                <img src="{{ asset('img/logos/Bouygues-logo.png') }}" alt="Logo" height="55">
+            </div>
+
+            <div class="item-carousel">
+                <img src="{{ asset('img/logos/Chanel-logo.png') }}" alt="Logo" height="55">
+            </div>
+
+            <div class="item-carousel">
+                <img src="{{ asset('img/logos/Société_Générale-logo.png') }}" alt="Logo" height="30">
+            </div>
+
+            <div class="item-carousel">
+                <img src="{{ asset('img/logos/UIMM-logo.png') }}" alt="Logo" height="50">
+            </div>
+
+            <div class="item-carousel">
+                <img src="{{ asset('img/logos/Le_Monde-logo.png') }}" alt="Logo" height="50">
+            </div>
+        </div>
+
     </div>
 
 {% endblock %}

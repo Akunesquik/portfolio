@@ -4,4 +4,100 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 50px;
+}
+
+.wrapper-home-intro h1{
+    color: white;
+    font-size: 48px;
+}
+
+.wrapper-home-intro img{
+    height: 100%;
+    max-height: 500px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+
+.wrapper-home-intro div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 50px;
+    
+}
+
+.wrapper-home-intro div p {
+    font-size: 20px;
+    color: #9C9C9C;
+    max-width: 500px;
+    line-height: 30px;
+}
+
+.wrapper-home-intro div a {
+    font-size: 20px;
+    background-color:#7516bd ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+@media (max-width: 768px) {
+    .wrapper-home-intro {
+        flex-direction: column; /* Passe les éléments en colonne sur les petits écrans */
+        align-items: center;
+    }
+
+    .wrapper-home-intro div {
+        width: 100%; /* Chaque div occupe toute la largeur */
+        margin: 20px 0; /* Espacement entre les divs */
+    }
+
+    .wrapper-home-intro h1 {
+        font-size: 36px; /* Réduit la taille du titre sur les petits écrans */
+    }
+
+    .wrapper-home-intro div p {
+        font-size: 18px; /* Réduit la taille du texte */
+    }
+}
+
+.wrapper-home-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;   
+    margin: 30px 50px; 
+}
+.wrapper-home-carousel p {
+    color: white;  
+}
+
+.wrapper-home-carousel .carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.wrapper-home-carousel .carousel .item-carousel{
+    background-color: black;
+    border: #9C9C9C 1px solid;
+    border-radius: 5px;
+    height: 70px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-home-carousel .carousel .item-carousel img{
+    filter: grayscale(100%) brightness(100%) contrast(100%) sepia(0) invert(0) hue-rotate(0deg);
+
 }
