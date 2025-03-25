@@ -20,14 +20,16 @@ class PortfolioController extends AbstractController
     {
         $projects = [
             [
-                'title' => 'Projet Symfony',
-                'description' => 'Un projet développé avec Symfony pour la gestion des utilisateurs.',
-                'link' => 'https://github.com/mon-projet-symfony'
+                'title' => 'Projet Youtube MP3',
+                'description' => "Création d'un 'youtube to MP3', la problématique était que j'avais besoin de télécharger des musiques sur une clé USB pour ma famille, et les sites le permettant était trop long ou rempli de pubs. Voici donc un YTMP3 fonctionnel, il y a un installer qui se trouve dans le github, vous pouvez le télécharger et l'essayer. ",
+                'link' => 'https://github.com/Akunesquik/Ytmp3',
+                'image' => 'ytmp3.png'
             ],
             [
                 'title' => 'Portfolio Personnel',
                 'description' => 'Mon propre portfolio codé en Symfony et Twig.',
-                'link' => 'https://mon-portfolio.com'
+                'link' => 'https://mon-portfolio.com',
+                'image' => 'moi.png'
             ],
         ];
 
