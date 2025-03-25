@@ -36,20 +36,9 @@ class PortfolioController extends AbstractController
         ]);
     }
 
-    #[Route('/contact', name: 'contact', methods: ['GET', 'POST'])]
+    #[Route('/contact', name: 'contact', methods: ['GET'])]
     public function contact(Request $request): Response
     {
-        if ($request->isMethod('POST')) {
-            $name = $request->request->get('name');
-            $email = $request->request->get('email');
-            $message = $request->request->get('message');
-
-            // Normalement, ici tu enverrais un email ou enregistrerais les infos en BDD
-            $this->addFlash('success', 'Merci pour ton message, je te répondrai bientôt !');
-
-            return $this->redirectToRoute('contact');
-        }
-
         return $this->render('portfolio/contact.html.twig');
     }
 }

@@ -2,8 +2,12 @@
 
 {% block title %}Mes Projets{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/projects.css') }}">
+{% endblock %}
+
 {% block content %}
-<section>
+<section class="wrapper-projects">
     <h1>Mes Projets</h1>
     <div class="projects">
         {% for project in projects %}

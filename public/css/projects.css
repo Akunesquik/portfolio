@@ -1,0 +1,14 @@
+.wrapper-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects{
+    border: 1px solid red;
+}
+
+.project-card{
+    border: 1px solid yellow ;
+}
